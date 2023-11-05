@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Diagnostic</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="./assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="./assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="./assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="./assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="./assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="./index.html" class="logo d-flex align-items-center">
+        <img src="./assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Diagnostic</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="./assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="./assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="./assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="./assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Kevin Anderson</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Manager</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="./index.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./managerDashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#Test-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Manage Test</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="Test-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li class="">
+            <a href="./managerTest.html">
+              <i class="bi bi-circle"></i><span>Test List</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-bs-target="#Patient-nav" data-bs-toggle="" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Manage Patient</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="Patient-nav" class="nav-content" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="./managerPatient.html" class="active">
+              <i class="bi bi-circle"></i><span>Patient List</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- <li class="nav-heading">Test For Patient</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./create.html">
+          <i class="bi bi-person"></i>
+          <span>Create New</span>
+        </a>
+      </li> -->
+
+    </ul>
+
+  </aside>
+
+  <main id="main" class="main" style="min-height: 70vh;">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <div class="pagetitle">
+                    <h1>Manager Dashboard</h1>
+                    <nav>
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Dashboard</li>
+                      </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-6 text-end">
+                <a href="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CreateModal">Create</a>
+                <!-- Create -->
+                <div class="modal fade text-start" id="CreateModal" tabindex="-1" aria-labelledby="CreateModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="CreateModalLabel">Create</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 pb-3">
+                                            <label for="">Patient Name : </label>
+                                            <input type="text" class="form-control mt-2">
+                                        </div>
+                                        <div class="col-md-6 pb-3">
+                                            <label for="">Patient Mobile : </label>
+                                            <input type="text" class="form-control mt-2">
+                                        </div>
+                                        <div class="col-12 pb-3">
+                                            <label for="">Patient Address : </label>
+                                            <textarea name="" id="" cols="30" rows="2" class="form-control mt-2"></textarea>
+                                        </div>
+                                        <div class="col-12 pb-3">
+                                            <label for="">Advance Payment : </label>
+                                            <input type="text" class="form-control mt-2">
+                                        </div>
+                                        <div class="col-12 pb-3">
+                                            <label for="">Test Name : </label>
+                                            <div class="row">
+                                              <div class="col-10">
+                                                <select class="form-select mt-2">
+                                                  <option selected>Choose</option>
+                                                  <option value="1">Demo Test</option>
+                                                  <option value="2">Demo Test</option>
+                                                  <option value="3">Demo Test</option>
+                                                </select>
+                                              </div>
+                                              <div class="col-2 text-end">
+                                                <a href="" class="btn btn-success mt-2"><i class="bi bi-plus-circle"></i></a>
+                                              </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <a href="" class="btn btn-success">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card p-3 table-responsive">
+                    <table class="table table-striped table-hover table-responsive">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Patient_Name</th>
+                            <th scope="col">Test_Name</th>
+                            <th scope="col" class="text-end">Total_Amount</th>
+                            <th scope="col" class="text-end">Paied</th>
+                            <th scope="col" class="text-end">Due</th>
+                            <th scope="col" class="text-center">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Demo Patient</td>
+                            <td>
+                                <ol>
+                                    <li>Demo Test</li>
+                                    <li>Demo Test</li>
+                                    <li>Demo Test</li>
+                                </ol>
+                            </td>
+                            <td class="text-end">1500</td>
+                            <td class="text-end">500</td>
+                            <td class="text-end">1000</td>
+                            <td class="text-center">
+                              <a href="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ViewModal">View</a>
+                              <!-- View -->
+                              <div class="modal fade text-start" id="ViewModal" tabindex="-1" aria-labelledby="ViewModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="ViewModalLabel">Patient Information</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                              <div class="container">
+                                                  <div class="row">
+                                                    <div class="col-6">
+                                                      <h4 class="">Patient Name </h4>
+                                                      <h4 class="">Patient Mobile </h4>
+                                                      <h4 class="">Patient Address </h4>
+                                                    </div>
+                                                    <div class="col-6">
+                                                      <h4 class="">: Demo Parient</h4>
+                                                      <h4 class="">: 01*** *** ***</h4>
+                                                      <h4 class="">: Khulna</h4>
+                                                    </div>
+
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                                <a href="" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#EditModal">Edit</a>
+                                <!-- Edit -->
+                                <div class="modal fade text-start" id="EditModal" tabindex="-1" aria-labelledby="EditModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="EditModalLabel">Edit</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-6 pb-3">
+                                                            <label for="">Patient Name : </label>
+                                                            <input type="text" value="Demo Patient" class="form-control mt-2">
+                                                        </div>
+                                                        <div class="col-md-6 pb-3">
+                                                            <label for="">Patient Mobile : </label>
+                                                            <input type="text" value="01** *** ***" class="form-control mt-2">
+                                                        </div>
+                                                        <div class="col-12 pb-3">
+                                                            <label for="">Patient Address : </label>
+                                                            <textarea class="form-control mt-2" id="" cols="30" rows="3">Khulna</textarea>
+                                                        </div>
+                                                        <div class="col-12 pb-3">
+                                                            <label for="">Payment ( 1500 ) : Due (1000)</label>
+                                                            <input type="text" value="500" class="form-control mt-2">
+                                                        </div>
+                                                        <div class="col-12 pb-3">
+                                                            <label for="">Test Name : </label>
+                                                            <select class="form-select mt-2">
+                                                                <option selected hidden>Demo Test</option>
+                                                                <option value="1">Demo Test</option>
+                                                                <option value="2">Demo Test</option>
+                                                                <option value="3">Demo Test</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <a href="" class="btn btn-success">Update</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeleteModal">Delete</a>
+                                <!-- Delete -->
+                                <div class="modal fade text-start" id="DeleteModal" tabindex="-1" aria-labelledby="DeleteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="DeleteModalLabel">Delete</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <h3 class="text-center">Are you sure ?</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <a href="" class="btn btn-danger">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Demo Patient</td>
+                            <td>
+                                <ol>
+                                    <li>Demo Test</li>
+                                    <li>Demo Test</li>
+                                    <li>Demo Test</li>
+                                </ol>
+                            </td>
+                            <td class="text-end">1500</td>
+                            <td class="text-end">500</td>
+                            <td class="text-end">1000</td>
+                            <td class="text-center">
+                              <a href="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ViewModal">View</a>
+                              <!-- View -->
+                              <div class="modal fade text-start" id="ViewModal" tabindex="-1" aria-labelledby="ViewModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="ViewModalLabel">Patient Information</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                              <div class="container">
+                                                  <div class="row">
+                                                    <div class="col-6">
+                                                      <h4 class="">Patient Name </h4>
+                                                      <h4 class="">Patient Mobile </h4>
+                                                      <h4 class="">Patient Address </h4>
+                                                    </div>
+                                                    <div class="col-6">
+                                                      <h4 class="">: Demo Parient</h4>
+                                                      <h4 class="">: 01*** *** ***</h4>
+                                                      <h4 class="">: Khulna</h4>
+                                                    </div>
+
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                                <a href="" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#EditModal">Edit</a>
+                                <!-- Edit -->
+                                <div class="modal fade text-start" id="EditModal" tabindex="-1" aria-labelledby="EditModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="EditModalLabel">Edit</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-6 pb-3">
+                                                            <label for="">Patient Name : </label>
+                                                            <input type="text" value="Demo Patient" class="form-control mt-2">
+                                                        </div>
+                                                        <div class="col-md-6 pb-3">
+                                                            <label for="">Patient Mobile : </label>
+                                                            <input type="text" value="01** *** ***" class="form-control mt-2">
+                                                        </div>
+                                                        <div class="col-12 pb-3">
+                                                            <label for="">Patient Address : </label>
+                                                            <textarea class="form-control mt-2" id="" cols="30" rows="2">Khulna</textarea>
+                                                        </div>
+                                                        <div class="col-12 pb-3">
+                                                            <label for="">Test Name : </label>
+                                                            <select class="form-select mt-2">
+                                                                <option selected hidden>Demo Test</option>
+                                                                <option value="1">Demo Test</option>
+                                                                <option value="2">Demo Test</option>
+                                                                <option value="3">Demo Test</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <a href="" class="btn btn-success">Update</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeleteModal">Delete</a>
+                                <!-- Delete -->
+                                <div class="modal fade text-start" id="DeleteModal" tabindex="-1" aria-labelledby="DeleteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="DeleteModalLabel">Delete</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <h3 class="text-center">Are you sure ?</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <a href="" class="btn btn-danger">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </main>
+  
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Arman's Solution</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://arman9022.github.io/a.solution/" class="fw-bold">Arman's Solution</a>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="./assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="./assets/vendor/echarts/echarts.min.js"></script>
+  <script src="./assets/vendor/quill/quill.min.js"></script>
+  <script src="./assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="./assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="./assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
